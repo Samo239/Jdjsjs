@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8">
+  <title>Սա քեզ իմ հրեշտակ❤️</title>
+  <style>
+    body {
+      background: white;
+      color: black;
+      font-family: "Segoe UI", sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    .hidden, #content, #examSection, #chessText, #booksSection {
+      display: none;
+    }
+    .heart {
+      font-size: 24px;
+      color: red;
+      margin: 0 3px;
+    }
+    .poem {
+      white-space: pre-wrap;
+      font-size: 18px;
+      line-height: 1.6;
+      margin: 30px 0;
+    }
+    .timer, .timeofday-message, .planet, .thoughts-counter {
+      margin-top: 40px;
+      font-size: 18px;
+    }
+    button, input {
+      padding: 10px;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    .menu-button {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: none;
+      border: none;
+      font-size: 30px;
+      cursor: pointer;
+    }
+    .menu {
+      position: fixed;
+      top: 60px;
+      right: 20px;
+      background: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      padding: 10px;
+      display: none;
+      text-align: left;
+    }
+    .menu a {
+      display: block;
+      padding: 8px 12px;
+      text-decoration: none;
+      color: black;
+    }
+    .menu a:hover {
+      background-color: #f2f2f2;
+    }
+    .certificate {
+      border: 3px solid gold;
+      border-radius: 15px;
+      padding: 20px;
+      margin-top: 30px;
+      background: #fffbea;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    }
+    .hearts-40 {
+      font-size: 20px;
+      color: red;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 20px;
+    }
+    .drawing {
+      margin-top: 30px;
+      font-style: italic;
+      color: #444;
+    }
+    .book-quotes p {
+      font-size: 16px; /* Reduced font size */
+      line-height: 1.6;
+      margin: 20px 0;
+    }
+    .book-quotes span {
+      font-weight: bold;
+    }
+    .thoughts {
+      font-style: italic;
+      margin-top: 50px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div id="menuToggle" style="display: none;">
+    <button class="menu-button" onclick="toggleMenu()">☰</button>
+    <div class="menu" id="menu">
+      <a href="#" onclick="showMainContent()">Գլխավոր էջ</a>
+      <a href="#" onclick="showExamSection()">Քննություններ</a>      <a href="javascript:void(0);" onclick="showChessText()">Շախմատ</a>
+      <a href="javascript:void(0);" onclick="showMagicHeart()">❤️ Հայելի ❤️</a>
+<a href="javascript:void(0);" onclick="showSecretChessBoard()">♟️ Գաղտնի Շախմատ ♟️</a>
+      <a href="javascript:void(0);" onclick="showNewsSection()">News</a>
+<a href="#" onclick="showRealUnfinishedBook()">📖 Անավարտ գիրք 📖</a>
+<a href="#" onclick="showStarsRain()">⭐ Անձրև ⭐</a>
+
+    </div>
+  </div>
+
+  <h2>Սա քեզ իմ Ան❤️</h2>
+  <div id="auth">
+    <p>Գրիր գաղտնի կոդը՝</p>
+    <input type="password" id="codeInput" placeholder="Գաղտնի կոդը">
+    <br>
+    <button onclick="checkCode()">Մուտք գործել</button>
+  </div>
+
+  <div id="heartSection" class="hidden">
+    <p>Կտտացրու սրտիկին՝ բացելու համար</p>
+    <button onclick="showContent()">❤️</button>
+  </div>
+
+  <div id="content">
+    <div class="poem">
+      <span class="heart">❤️</span>
+      
+❤️Երազումս աղջիկ անցավ
+Կամաց խոսեց ու հեռացավ
+Մոտ կանչեցի,նա մոտ չեկավ
+Հետո հանկարծ նա հետ շրջվեց 
+Եվ երբ տեսա նրա փայլը❤️
+Խոսքերը իմ իսկույն կորան
+Ու բառերս անեացան
+Ականջին ես շշնջացի
+Դու ամենա գեղեցիկն ես
+Սաղից բարի,սաղից չքնաղ
+Սաղից համեստ,սաղից ուրախ
+❤️Քո ժպիտը սաղից լավն է
+Ու ձայնը քո բոլորից նուրբ
+Արդեն վերջում երբ գնում էր
+Պինդ բռնեցի նրա ձեռքը
+Ու ավելի մոտիկացա
+Մոտիկացա ու գոռացի
+Դու ամենա ամենան ես
+Դու իմ անգին հրեշտակն ես❤️
+Ու դու հավերժ  իմ Աննան ես
+Թեթև ժպտաց ու հեռացավ
+Բայց մինչեւ այդ նա ինձ ասաց
+Որ վաղը դեռ նա հետ կգա 
+Գիշեր եկավ,երազ տեսա
+Նորից եկավ իմ մոտ կանգնեց
+❤️Չէր խոսում նա,ձայն չէր հանում
+Նայում էր ինձ,լուռ ժպտում էր
+Նորից նրան մոտիկացա
+Ու այս անգամ չհեռվացավ
+Նայում էի ես իր ժպիտին
+Անվերջ նայում ու հիանում
+Նայում էի ու զարմանք ապրում
+Ու հայացքս ես չէի թեքում❤️
+Երբ նայում էի նա ժպտում էր
+Առանց թարթել հիանում էի
+Իր ժպիտով վարակվում էի
+Փորձում էի ես հետը խոսայի
+Ժպիտով էի իր զմայլված
+Մեկ էլ հանկարծ մոտիկացավ 
+❤️Այս անգամ ես ավելի պինդ
+Ու շատ ամուր վերցրի ձեռքը
+Եվ խլացնող ուժեղ ձայնով
+Այնպես ուժեղ ես գոռացի
+Որ աշխարհը ամբողջ լսի
+Ես ասեցի իմ արևին
+Իմ հմայիչ լույսի շողին 
+Ասացի ես իմ Աննային
+Իմ ամենա ամենան ես❤️
+
+
+
+
+
+
+
+
+      <span class="heart">❤️</span>Սամը միշտ քո հետա❤️
+      <span class="heart">❤️</span>Մեռնեմ կյանքիդ իմ հրեշտակ❤️
+    </div>
+
+    <div class="timer">
+      <span class="heart">❤️</span>Մենք իրար ճանաչում ենք՝ <span id="timeSince"></span>
+    </div>
+
+    <div class="timeofday-message" id="timeofdayMessage"></div>
+
+    <div class="planet">
+      <span class="heart">❤️</span><strong>Մեր մոլորակը կանգ է առել այն օրվանից, երբ ես քեզ ճանաչեցի՝ 2023 թվականի սեպտեմբերի 22-ից</strong><span class="heart">❤️</span>
+    </div>
+
+    <div class="thoughts-counter">
+      <p>Քեզ մասին իմ մտքերի քանակը՝ <span id="thoughts"></span></p>
+    </div>
+
+    <p style="margin-top:30px; font-weight: bold">Սամոյի կողմից իր արևին❤️</p>
+  </div> <!-- end of #content -->
+
+  <div id="magicHeartSection" style="display: none;" class="hidden">
+    <!-- Կախարդական Հայելի -->
+    <div id="magicMirrorSection" style="margin-top:50px;">
+      <h2><span class="heart">❤️</span> Հայելի <span class="heart">❤️</span></h2>
+      <button onclick="revealMagicMessage()" style="font-size:18px; padding:10px 20px;">Նայիր հայելուն</button>
+      <p id="magicMessage" style="margin-top:20px; font-style:italic;"></p>
+    </div>
+
+    
+
+  </div>
+
+  <div id="examSection">
+    <h3>Քո արվեստը՝ 40 սրտիկով գնահատված</h3>
+    <div class="certificate">
+      <h4>Սերտիֆիկատ</h4>
+      <p><strong>Գծագրություն՝ 20/20</strong></p>
+      <p>Գծերը մաքուր են, ինչպես սիրտդ։ Քանի որ դու գծում ես ոչ թե մատիտով, այլ հոգով։</p>
+      <p><strong>Կոմպոզիցիա՝ 20/20</strong></p>
+      <p>Դու ինքդ՝ կատարյալ կոմպոզիցիա ես։</p>
+      <p><strong>Ընդամենը՝ 40/40</strong></p>
+    </div>
+    <div class="hearts-40" id="heartsRow"></div>
+    <div class="drawing">
+      <p>Գնահատականը պարզապես թիվ է։ Ես միշտ քեզ հետ եմ❤️</p>
+    </div>
+  </div>
+
+  <div id="chessText" class="hidden">
+    <h3>Շախմատ</h3>
+    <p>Շախմատը մտքի ուժի և ռազմավարության արվեստ է։ Այն շատ ավելին է, քան պարզապես խաղ՝ դա մի մեթոդ է մտածելու և պայքարելու համար։ Ամեն քայլ, ամեն շախ՝ որոշում է խաղի ելքը։</p>
+    <p>Իմ համար դու հենց այդ ուժն ես՝ խելացի, մարտական, որ միշտ դիմադրում ես և միշտ հաղթում։</p>
+    <p>Քեզանից ոգեշնչված, ես վստահ եմ, որ դու երբեք չես հանձնվում՝ ինչպես շախմատի լավագույն խաղացողները։ Քո բոլոր քայլերը՝ անկախ ամեն ինչից, իմաստ ունեն։</p>
+    <p>Շախմատը սկսվում է մեկ քայլից, բայց հաղթանակը գալիս է համբերությամբ և ճիշտ ռազմավարությամբ։ Իսկ դու ունես և՛ մեկը, և՛ մյուսը։</p>
+    <p class="heart">❤️Եթե կյանքը շախմատ լիներ, ես միշտ կուզեի քեզ հետ լինել մի թիմում։ Ու ոչ թե հաղթելու համար… այլ վստահ լինելու, որ ամեն քայլը մտածված է❤️</p>
+  </div>
+
+  <!-- Ավելացված մտքեր՝ միայն գրքեր բաժնում -->
+    
+  </div>
+  <div id="newsSection" class="hidden">
+  <h2 style="text-align: center; color: #d10000;">Օրվա Լրատվությունը</h2>
+  <div style="display: flex; justify-content: center; margin-top: 20px;">
+    <video id="newsVideo" width="80%" controls style="border: 4px solid #ffcccc; border-radius: 16px; box-shadow: 0 0 15px rgba(0,0,0,0.2);">
+      <source src="news.mp4" type="video/mp4">
+      Քո բրաուզերը չի աջակցում տեսանյութի ցուցադրումը։
+    </video>
+  </div>
+</div>
+
+  <script>
+    function checkCode() {
+      const code = document.getElementById("codeInput").value;
+      if (code === "09.01.2007") {
+        document.getElementById("auth").style.display = "none";
+        document.getElementById("heartSection").style.display = "block";
+      } else {
+        alert("Սխալ կոդ է։");
+      }
+    }
+
+    function showContent() {
+  clearAllSections();
+  document.getElementById("heartSection").style.display = "none";
+  document.getElementById("content").style.display = "block";
+  document.getElementById("menuToggle").style.display = "block";
+  document.getElementById("examSection").style.display = "none";
+  document.getElementById("chessText").style.display = "none";
+  updateTimer();
+  setInterval(updateTimer, 1000);
+  timeOfDayMessage();
+  startThoughtStats();
+  document.getElementById("bg-music").play();
+}
+
+    function updateTimer() {
+      const startDate = new Date("2023-09-22T00:00:00");
+      const now = new Date();
+      const diff = now - startDate;
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / (1000 * 60)) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
+      document.getElementById("timeSince").textContent =
+        `${days} օր, ${hours} ժամ, ${minutes} րոպե, ${seconds} վայրկյան`;
+    }
+
+    function timeOfDayMessage() {
+      const hour = new Date().getHours();
+      let message = "";
+      if (hour >= 5 && hour < 12) message = "Բարի առավոտ իմ արև❤️";
+      else if (hour >= 12 && hour < 17) message = "Բարի ցերեկ իմ հրեշտակ❤️";
+      else if (hour >= 17 && hour < 22) message = "Բարի երեկո իմ շող❤️";
+      else message = "Բարի գիշեր իմ լուսին❤️";
+      document.getElementById("timeofdayMessage").innerHTML =
+        `<span class="heart">❤️</span>${message}<span class="heart">❤️</span>`;
+    }
+
+    function startThoughtStats() {
+      const startDate = new Date("2023-09-22T00:00:00");
+      setInterval(() => {
+        const now = new Date();
+        const diffSec = Math.floor((now - startDate) / 1000);
+        const thoughts = diffSec * 0.8;
+        document.getElementById("thoughts").textContent =
+          Math.floor(thoughts).toLocaleString();
+      }, 1000);
+    }
+
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
+    }
+
+    function showMainContent() {
+  clearAllSections();
+  clearMagicMirror();
+  clearSecretChessBoard();
+      document.getElementById("examSection").style.display = "none";
+      document.getElementById("content").style.display = "block";
+      document.getElementById("chessText").style.display = "none";
+      document.getElementById("menu").style.display = "none";
+      document.getElementById("booksSection").style.display = "none";
+    }
+
+    function showExamSection() {
+  clearMagicMirror();
+  clearSecretChessBoard();
+      document.getElementById("examSection").style.display = "block";
+      document.getElementById("content").style.display = "none";
+      document.getElementById("chessText").style.display = "none";
+      document.getElementById("booksSection").style.display = "none";
+      document.getElementById("menu").style.display = "none";
+    }
+
+    function showChessText() {
+  clearMagicMirror();
+  clearSecretChessBoard();
+      document.getElementById("chessText").style.display = "block";
+      document.getElementById("content").style.display = "none";
+      document.getElementById("examSection").style.display = "none";
+      document.getElementById("booksSection").style.display = "none";
+      document.getElementById("menu").style.display = "none";
+    }
+
+    
+  
+function showMagicHeart() {
+  clearSecretChessBoard();
+  document.getElementById("magicHeartSection").style.display = "block";
+  document.getElementById("content").style.display = "none";
+  document.getElementById("examSection").style.display = "none";
+  document.getElementById("chessText").style.display = "none";
+  document.getElementById("booksSection").style.display = "none";
+  document.getElementById("menu").style.display = "none";
+}
+
+// Կախարդական Հայելի
+const mirrorMessages = [
+  "Ամեն հայելի քեզ պիտի նախանձի։",
+  "Աշխարհի ամենագեղեցիկ հայացքը այս պահին էկրանին է։",
+  "Քո սիրտը փայլում է նույնիսկ հայելու հետևում։",
+  "Աստղերն այսօր քեզ են շողում։",
+  "Հայելին խոսեց՝ ասաց՝ դու հրաշք ես։"
+];
+
+function revealMagicMessage() {
+  const message = mirrorMessages[Math.floor(Math.random() * mirrorMessages.length)];
+  document.getElementById("magicMessage").innerHTML = `<span class="heart">❤️</span> ${message} <span class="heart">❤️</span>`;
+}
+
+function showMagicHeart() {
+  clearAllSections();
+  clearSecretChessBoard();
+  document.getElementById("magicHeartSection").style.display = "block";
+  document.getElementById("content").style.display = "none";
+  document.getElementById("examSection").style.display = "none";
+  document.getElementById("chessText").style.display = "none";
+  document.getElementById("booksSection").style.display = "none";
+  document.getElementById("menu").style.display = "none";
+}
+
+function showMagicHeart() {
+  clearAllSections();
+  clearSecretChessBoard();
+  document.getElementById("magicHeartSection").style.display = "block";
+  document.getElementById("content").style.display = "none";
+  document.getElementById("examSection").style.display = "none";
+  document.getElementById("chessText").style.display = "none";
+  document.getElementById("booksSection").style.display = "none";
+  document.getElementById("menu").style.display = "none";
+}
+
+function showMainContent() {
+  clearAllSections();
+  clearMagicMirror();
+  clearSecretChessBoard();
+  document.getElementById("magicHeartSection").style.display = "none";
+  document.getElementById("content").style.display = "block";
+  document.getElementById("examSection").style.display = "none";
+  document.getElementById("chessText").style.display = "none";
+  document.getElementById("booksSection").style.display = "none";
+  document.getElementById("menu").style.display = "block";
+}
+
+function showSecretChessBoard() {
+  clearAllSections();
+  clearMagicMirror();
+  document.getElementById("secretChessBoardSection").style.display = "block";
+  document.getElementById("content").style.display = "none";
+  document.getElementById("magicHeartSection").style.display = "none";
+  document.getElementById("examSection").style.display = "none";
+  document.getElementById("booksSection").style.display = "none";
+  document.getElementById("chessText").style.display = "none";
+  document.getElementById("menu").style.display = "none";
+  createSecretChessBoard();
+}
+
+
+function createSecretChessBoard() {
+  const board = document.getElementById("chessBoard");
+  board.innerHTML = "";
+  const message = document.getElementById("chessMessage");
+  const pieces = {
+    "wR": "❤️Դու ուղիղ ես, ուժեղ և վստահ։❤️",
+    "wN": "❤️Քո շրջանցիկ ուղիները միշտ ինձ հասցնում են ճիշտ տեղ։❤️",
+    "wB": "❤️Քո անկյունային հայացքը միշտ հասնում է խորքը։❤️",
+    "wQ": "❤️Քեզ նման շարժում ունեն միայն նրանք, ովքեր ուժն ու նրբությունը համատեղում են։❤️",
+    "wK": "❤️Նույնիսկ երբ լուռ ես, դաշտը հսկում ես դու։❤️",
+    "wP": "❤️Թույլ երևացողները կարող են անսպասելի հարվածներ հասցնել։❤️",
+    "bR": "❤️Դու ուղիղ ես, ուժեղ և վստահ։❤️",
+    "bN": "❤️Քո շրջանցիկ ուղիները միշտ ինձ հասցնում են ճիշտ տեղ։❤️",
+    "bB": "❤️Քո անկյունային հայացքը միշտ հասնում է խորքը։❤️",
+    "bQ": "❤️Քեզ նման շարժում ունեն միայն նրանք, ովքեր ուժն ու նրբությունը համատեղում են։❤️",
+    "bK": "❤️Նույնիսկ երբ լուռ ես, դաշտը հսկում ես դու։❤️",
+    "bP": "❤️Թույլ երևացողները կարող են անսպասելի հարվածներ հասցնել։❤️"
+  };
+
+  const layout = [
+    ["bR", "bN", "bB", "bQ", "bK", "bB", "bN", "bR"],
+    ["bP", "bP", "bP", "bP", "bP", "bP", "bP", "bP"],
+    ["", "", "", "", "", "", "", ""],
+    ["", "", "", "", "", "", "", ""],
+    ["", "", "", "", "", "", "", ""],
+    ["", "", "", "", "", "", "", ""],
+    ["wP", "wP", "wP", "wP", "wP", "wP", "wP", "wP"],
+    ["wR", "wN", "wB", "wQ", "wK", "wB", "wN", "wR"]
+  ];
+
+  for (let row = 0; row < 8; row++) {
+    for (let col = 0; col < 8; col++) {
+      const square = document.createElement("div");
+      square.className = "square";
+      square.style.width = "40px";
+      square.style.height = "40px";
+      square.style.display = "flex";
+      square.style.justifyContent = "center";
+      square.style.alignItems = "center";
+      square.style.fontSize = "20px";
+      square.style.cursor = "pointer";
+      square.style.backgroundColor = (row + col) % 2 === 0 ? "#eee" : "#444";
+      square.style.color = (row + col) % 2 === 0 ? "black" : "white";
+      square.style.position = "relative";
+
+      if (layout[row][col]) {
+        const img = document.createElement("img");
+        img.src = `https://upload.wikimedia.org/wikipedia/commons/${layout[row][col]}.svg`;
+        img.alt = layout[row][col];
+        img.style.width = "30px";
+        img.style.height = "30px";
+        square.appendChild(img);
+      }
+
+      square.addEventListener("click", () => {
+        const pieceCode = layout[row][col];
+        if (pieces[pieceCode]) {
+          message.textContent = pieces[pieceCode];
+        }
+      });
+
+      board.appendChild(square);
+    }
+  }
+}
+
+
+function clearSecretChessBoard() {
+  const board = document.getElementById("chessBoard");
+  const message = document.getElementById("chessMessage");
+  if (board) board.innerHTML = '';
+  if (message) message.textContent = '';
+  const section = document.getElementById("secretChessBoardSection");
+  if (section) section.style.display = "none";
+}
+
+function clearMagicMirror() {
+  const message = document.getElementById("magicMessage");
+  if (message) message.textContent = '';
+  const section = document.getElementById("magicHeartSection");
+  if (section) section.style.display = "none";
+}
+    
+function showNewsSection() {
+  clearAllSections();
+  clearMagicMirror();
+  clearSecretChessBoard();
+  document.getElementById("content").style.display = "none";
+  document.getElementById("examSection").style.display = "none";
+  document.getElementById("chessText").style.display = "none";
+  document.getElementById("booksSection").style.display = "none";
+  document.getElementById("magicHeartSection").style.display = "none";
+  document.getElementById("secretChessBoardSection").style.display = "none";
+  document.getElementById("newsSection").style.display = "block";
+  document.getElementById("menu").style.display = "none";
+
+}
+
+</script>
+
+<audio id="bg-music" autoplay loop>
+  <source src="Sting - Shape of my heart.mp3" type="audio/mpeg">
+  Ձեր բրաուզերը չի աջակցում աուդիո նվագարկիչին։
+</audio>
+
+<div id="secretChessBoardSection" class="hidden">
+  <h3>Գաղտնի Շախմատ</h3>
+  <p>Սեղմիր ֆիգուրներից որևէ մեկը՝ տեսնելու մոգական խոսքը։</p>
+  <div id="chessBoard" style="width: 320px; height: 320px; display: grid; grid-template-columns: repeat(8, 1fr); border: 4px solid #444; margin: 20px auto;"></div>
+  <div id="chessMessage" style="font-size: 18px; margin-top: 20px; max-width: 80%; margin-left: auto; margin-right: auto; color: #333; font-style: italic;"></div>
+</div>
+
+<div id="rainSection" class="hidden">
+  <h2>⭐ Անձրև ⭐</h2>
+  <p style="margin-top:20px; font-size:18px;">Դու միակ անձրևն ես, որ ջերմություն ես պարգևում։</p>
+</div>
+
+<canvas id="starsCanvas" style="position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:0; display:none;"></canvas>
+
+<script>
+let stars = [];
+const starWords = [
+  "Աննա", "Հրեշտակ", "Շողք", "Արև", "Սամո",
+  "Հույս", "Լույս", "Խաղաղություն", "Երազանք",
+  "Ջերմություն", "Կյանք", "Փայլ", "Ժպիտ",
+  "Գարուն", "Մաքրություն", "Թեթևություն", "Բարություն",
+  "Թևեր", "Սպասում", "Երազ", "Կապույտ",
+  "Կախարդանք", "Սրտիկ"
+];
+const canvas = document.getElementById('starsCanvas');
+const ctx = canvas.getContext('2d');
+
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+window.addEventListener('resize', resizeCanvas);
+resizeCanvas();
+
+function createStar() {
+  const x = Math.random() * canvas.width;
+  const y = 0;
+  const size = Math.random() * 2 + 1;
+  const speed = Math.random() * 1 + 0.5;
+  const word = Math.random() < 0.2 ? starWords[Math.floor(Math.random() * starWords.length)] : null;
+  stars.push({ x, y, size, speed, word });
+}
+
+function updateStars() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  for (let i = 0; i < stars.length; i++) {
+    const star = stars[i];
+    star.y += star.speed;
+    if (star.y > canvas.height) {
+      stars.splice(i, 1);
+      i--;
+      continue;
+    }
+    ctx.fillStyle = "white";
+    ctx.beginPath();
+    ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
+    ctx.fill();
+    if (star.word) {
+      ctx.font = "14px Segoe UI";
+      ctx.fillStyle = "#cc3366";
+      ctx.fillText(star.word, star.x - 10, star.y);
+    }
+  }
+}
+
+let starInterval;
+
+function startStars() {
+  if (!starInterval) {
+    starInterval = setInterval(createStar, 300);
+    animateStars();
+  }
+}
+
+function stopStars() {
+  clearInterval(starInterval);
+  starInterval = null;
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
+
+function animateStars() {
+  if (starInterval) {
+    updateStars();
+    requestAnimationFrame(animateStars);
+  }
+}
+
+function showStarsRain() {
+  clearAllSections();
+  clearAllSections();
+  if (document.getElementById("rainSection")) {
+    document.getElementById("rainSection").style.display = "block";
+  }
+  if (document.getElementById("starsCanvas")) {
+    document.getElementById("starsCanvas").style.display = "block";
+    startStars();
+  }
+}
+
+function clearAllSections() {
+  clearMagicMirror();
+  clearSecretChessBoard();
+  document.getElementById("content").style.display = "none";
+  document.getElementById("examSection").style.display = "none";
+  document.getElementById("chessText").style.display = "none";
+  document.getElementById("newsSection").style.display = "none";
+  document.getElementById("rainSection").style.display = "none";
+  document.getElementById("magicHeartSection").style.display = "none";
+  document.getElementById("secretChessBoardSection").style.display = "none";
+  document.getElementById("realUnfinishedBookSection").style.display = "none";
+  document.getElementById("menu").style.display = "none";
+  if (document.getElementById("starsCanvas")) {
+    document.getElementById("starsCanvas").style.display = "none";
+    stopStars();
+  }
+}
+</script>
+
+<div id="realUnfinishedBookSection" class="hidden" style="background: #f5f5dc; min-height:100vh; padding:40px;">
+  <h2 style="text-align:center; font-size:28px; margin-bottom:30px;">📖 Անավարտ գիրք 📖</h2>
+  <div id="pageContainer" style="background:white; border-radius:12px; padding:40px; max-width:600px; margin:0 auto; box-shadow:0 0 20px rgba(0,0,0,0.2); font-size:22px; line-height:1.6; position:relative;">
+    <div id="realBookPage" style="min-height:200px; display:flex; align-items:center; justify-content:center; text-align:center;"></div>
+    <button onclick="prevRealPage()" style="position:absolute; left:-60px; top:50%; transform:translateY(-50%); background:#ffcccc; border:none; border-radius:50%; width:50px; height:50px; font-size:20px;">⬅</button>
+    <button onclick="nextRealPage()" style="position:absolute; right:-60px; top:50%; transform:translateY(-50%); background:#ffcccc; border:none; border-radius:50%; width:50px; height:50px; font-size:20px;">➡</button>
+  </div>
+</div>
+<audio id="pageSound" src="https://cdn.pixabay.com/audio/2022/03/14/audio_d3524c8943.mp3"></audio>
+
+<script>
+const realBookPages = [
+  "Աշխարհում ամենագեղեցիկ ժպիտը քոնն է։",
+  "Ես երջանիկ եմ միայն երբ գիտեմ, որ դու ժպտում ես։",
+  "Ամեն օր իմ մտքերում ապրում է քո անունը։",
+  "Երբ քո աչքերին նայում եմ, մոռանում եմ աշխարհը։",
+  "Քո ժպիտը արևի լույսից էլ ջերմ է։",
+  "Երբ լսում եմ քո ձայնը, աշխարհը լռում է։",
+  "Քո ներկայությունը խաղաղություն է բերում ինձ։",
+  "Աշխարհի բոլոր ծաղիկները քեզ մոտ գունավոր թևիկներ են կորցնում։",
+  "Քեզ մտածելով՝ նույնիսկ անուշ քամիները ժպտում են։",
+  "Ամեն ինչ աշխարհում կորցնում է իր կարևորությունը, երբ դու ժպտում ես։",
+  "Քեզ հետ ամեն ինչ ավելի լուսավոր է, նույնիսկ անձրևը։",
+  "Քո մի ժպիտը կարող է նոր օր ստեղծել։",
+  "Ամեն բարի խոսք աշխարհում քեզ մասին է պատմում։"
+];
+
+let currentRealPage = 0;
+
+function showRealUnfinishedBook() {
+  clearAllSections();
+  if (document.getElementById("realUnfinishedBookSection")) {
+    document.getElementById("realUnfinishedBookSection").style.display = "block";
+    currentRealPage = 0;
+    showRealPage();
+    document.getElementById("realUnfinishedBookSection").style.display = "block";
+  }
+}
+
+function showRealPage() {
+  document.getElementById("realBookPage").textContent = realBookPages[currentRealPage];
+}
+
+function nextRealPage() {
+  if (currentRealPage < realBookPages.length - 1) {
+    currentRealPage++;
+    showRealPage();
+    playPageSound();
+  }
+}
+
+function prevRealPage() {
+  if (currentRealPage > 0) {
+    currentRealPage--;
+    showRealPage();
+    playPageSound();
+  }
+}
+
+function playPageSound() {
+  const sound = document.getElementById("pageSound");
+  sound.currentTime = 0;
+  sound.play();
+}
+</script>
+
+</body>
+</html>
